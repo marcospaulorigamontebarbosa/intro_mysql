@@ -1,0 +1,62 @@
+1)
+
+CREATE DATABASE marcos_paulo_2023_roteiro_pratico_1;
+
+2)
+
+USE marcos_paulo_2023_roteiro_pratico_1;
+
+CREATE TABLE clientes(
+	id INTEGER PRIMARY KEY,
+    nome VARCHAR(50),
+    email VARCHAR(50),
+    idade INTEGER
+);
+
+3)
+
+INSERT INTO clientes (id, nome, email, idade) VALUES (1, "cliente_1", "email_1", 1);
+INSERT INTO clientes (id, nome, email, idade) VALUES (2, "cliente_2", "email_2", 2);
+INSERT INTO clientes (id, nome, email, idade) VALUES (3, "cliente_3", "email_3", 3);
+INSERT INTO clientes (id, nome, email, idade) VALUES (4, "cliente_4", "email_4", 4);
+INSERT INTO clientes (id, nome, email, idade) VALUES (5, "cliente_5", "email_5", 5);
+INSERT INTO clientes (id, nome, email, idade) VALUES (6, "cliente_6", "email_6", 6);
+INSERT INTO clientes (id, nome, email, idade) VALUES (7, "cliente_7", "email_7", 7);
+INSERT INTO clientes (id, nome, email, idade) VALUES (8, "cliente_8", "email_8", 8);
+INSERT INTO clientes (id, nome, email, idade) VALUES (9, "cliente_9", "email_9", 9);
+INSERT INTO clientes (id, nome, email, idade) VALUES (10, "cliente_10", "email_10", 10);
+INSERT INTO clientes (id, nome, email, idade) VALUES (11, "cliente_11", "email_11", 11);
+INSERT INTO clientes (id, nome, email, idade) VALUES (12, "cliente_12", "email_12", 12);
+INSERT INTO clientes (id, nome, email, idade) VALUES (13, "cliente_13", "email_13", 13);
+INSERT INTO clientes (id, nome, email, idade) VALUES (14, "cliente_14", "email_14", 14);
+INSERT INTO clientes (id, nome, email, idade) VALUES (15, "cliente_15", "email_15", 15);
+INSERT INTO clientes (id, nome, email, idade) VALUES (16, "cliente_16", "email_16", 16);
+INSERT INTO clientes (id, nome, email, idade) VALUES (17, "cliente_17", "email_17", 17);
+INSERT INTO clientes (id, nome, email, idade) VALUES (18, "cliente_18", "email_18", 18);
+INSERT INTO clientes (id, nome, email, idade) VALUES (19, "cliente_19", "email_19", 19);
+INSERT INTO clientes (id, nome, email, idade) VALUES (20, "cliente_20", "email_20", 20);
+
+4)
+
+SELECT * FROM clientes;
+SELECT nome FROM clientes;
+SELECT idade FROM clientes;
+SELECT * FROM clientes WHERE id = 1;
+SELECT * FROM clientes LIMIT 4;
+
+5)
+
+UPDATE clientes
+SET nome = 'Adevair Vitório'
+WHERE id = 1;
+
+6)
+
+UPDATE clientes
+SET nome = 'Odeio Banco de dados da Silva'
+WHERE id = 3;
+
+7)
+
+DELETE FROM clientes
+WHERE id = 3;
